@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- 渐变定义 -->
+    <defs>
+        <linearGradient id="backgroundGradient" x1="0" y1="0" x2="512" y2="512">
+            <stop offset="0%" style="stop-color:#A8E6CF"/>
+            <stop offset="100%" style="stop-color:#3B82F6"/>
+        </linearGradient>
+        <linearGradient id="hairGradient" x1="256" y1="80" x2="256" y2="250">
+            <stop offset="0%" style="stop-color:#3F3F3F"/>
+            <stop offset="100%" style="stop-color:#1F1F1F"/>
+        </linearGradient>
+    </defs>
+
+    <!-- 背景 -->
+    <circle cx="256" cy="256" r="256" fill="url(#backgroundGradient)"/>
+
+    <!-- 头发 -->
+    <path d="M150 180 Q256 80 362 180 L362 200 Q310 170 256 170 Q202 170 150 200 Z" 
+          fill="url(#hairGradient)"/>
+    
+    <!-- 侧边头发 -->
+    <path d="M150 180 L150 250 Q180 230 180 200 Z" fill="url(#hairGradient)"/>
+    <path d="M362 180 L362 250 Q332 230 332 200 Z" fill="url(#hairGradient)"/>
+
+    <!-- 脸 -->
+    <circle cx="256" cy="260" r="110" fill="#FFE5D9"/>
+
+    <!-- 眉毛 -->
+    <path d="M186 210 L226 205" stroke="#3F3F3F" stroke-width="6" stroke-linecap="round"/>
+    <path d="M286 205 L326 210" stroke="#3F3F3F" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- 眼睛 -->
+    <g class="eyes">
+        <!-- 左眼 -->
+        <circle cx="206" cy="240" r="20" fill="#FFFFFF"/>
+        <circle cx="206" cy="240" r="12" fill="#3B82F6"/>
+        <circle cx="206" cy="240" r="6" fill="#000000"/>
+        <circle cx="200" cy="234" r="4" fill="#FFFFFF"/>
+
+        <!-- 右眼 -->
+        <circle cx="306" cy="240" r="20" fill="#FFFFFF"/>
+        <circle cx="306" cy="240" r="12" fill="#3B82F6"/>
+        <circle cx="306" cy="240" r="6" fill="#000000"/>
+        <circle cx="300" cy="234" r="4" fill="#FFFFFF"/>
+    </g>
+
+    <!-- 鼻子 -->
+    <path d="M256 250 L256 280 Q256 290 246 290" stroke="#CC9B8F" stroke-width="3" fill="none"/>
+
+    <!-- 嘴巴 -->
+    <path d="M226 300 Q256 310 286 300" stroke="#CC9B8F" stroke-width="3" fill="none"/>
+
+    <!-- 耳朵 -->
+    <path d="M150 240 Q140 260 150 280" stroke="#FFE5D9" stroke-width="16" stroke-linecap="round"/>
+    <path d="M362 240 Q372 260 362 280" stroke="#FFE5D9" stroke-width="16" stroke-linecap="round"/>
+</svg>
