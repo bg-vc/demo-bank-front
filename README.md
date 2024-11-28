@@ -1,97 +1,100 @@
-# BG Bank Frontend Application
+# BG Bank 前端项目
 
-A modern banking dashboard application built with Next.js and React, featuring a clean and intuitive user interface.
+基于 Next.js 和 React 构建的现代银行仪表盘应用，具有清晰直观的用户界面。
 
-## Technology Stack
+## 技术栈
 
-- **Framework:** Next.js 13+ (App Router)
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS
-- **Components:** 
-  - Custom React components
-  - Headless UI components
-- **State Management:** React Hooks
-- **Charts:** Recharts
-- **Icons:** Heroicons
-- **Authentication:** Built-in Next.js authentication
+- **框架：** Next.js 14.0.4 (App Router)
+- **开发语言：** TypeScript
+- **样式解决方案：** Tailwind CSS
+- **组件：** 
+  - 自定义 React 组件
+  - Headless UI 组件
+- **状态管理：** React Hooks
+- **图表：** Recharts
+- **图标：** lucide-react
+- **日期处理：** date-fns
 
-## Project Structure
+## 项目结构
 
 ```
 bg-bank-front/
-├── public/              # Static files (images, avatar)
+├── public/              # 静态资源文件（图片、头像等）
 ├── src/
-│   ├── app/            # Next.js 13 app directory
-│   │   ├── (auth)/     # Authentication related pages
-│   │   ├── (dashboard)/# Dashboard related pages
-│   │   │   ├── dashboard/    # Main dashboard
-│   │   │   ├── analytics/    # Analytics page
-│   │   │   └── settings/     # User settings
-│   │   └── page.tsx    # Landing page
-│   ├── components/     # React components
-│   │   ├── features/   # Feature-specific components
-│   │   ├── layouts/    # Layout components
-│   │   └── ui/         # Reusable UI components
-│   └── lib/           # Utility functions and configurations
-└── tailwind.config.js  # Tailwind CSS configuration
+│   ├── app/            # Next.js 13+ App Router 目录
+│   │   ├── (auth)/     # 认证相关页面
+│   │   ├── (dashboard)/# 仪表盘相关页面
+│   │   │   ├── dashboard/    # 主仪表盘
+│   │   │   ├── analytics/    # 数据分析页面
+│   │   │   └── settings/     # 用户设置
+│   │   └── page.tsx    # 首页
+│   ├── components/     # React 组件
+│   │   ├── features/   # 功能型组件
+│   │   ├── layouts/    # 布局组件
+│   │   └── ui/         # 通用UI组件
+│   └── utils/         # 工具函数和配置
+└── 配置文件
+    ├── next.config.js   # Next.js 配置
+    ├── tailwind.config.ts # Tailwind CSS 配置
+    └── tsconfig.json    # TypeScript 配置
 ```
 
-## Features and Modules
+## 功能模块
 
-### 1. Authentication
-- User login/signup
-- Profile management
-- Session handling
+### 1. 用户认证
+- 用户登录/注册
+- 个人资料管理
+- 会话管理
 
-### 2. Dashboard
-- Overview of financial status
-- Transaction history
-- Revenue charts and analytics
-- Quick actions menu
+### 2. 仪表盘
+- 财务状况概览
+- 交易历史记录
+- 收入支出图表
+- 快捷操作菜单
 
-### 3. Transaction Management
-- Transaction list view
-- Transaction details
-- Add/manage friends
-- Transfer functionality
+### 3. 交易管理
+- 交易列表视图
+- 交易详情
+- 好友管理
+- 转账功能
 
-### 4. Analytics
-- Revenue charts
-- Financial statistics
-- Performance metrics
-- Data visualization
+### 4. 数据分析
+- 收入支出图表
+- 财务统计
+- 性能指标
+- 数据可视化
 
-### 5. Settings
-- Profile settings
-- Account management
-- Preferences
-- Security settings
+### 5. 设置中心
+- 个人资料设置
+- 账户管理
+- 偏好设置
+- 安全设置
 
-### 6. UI Components
-- Responsive layout
-- Custom avatar system
-- Interactive charts
-- Modern dashboard design
-- Loading states and animations
+### 6. UI 组件
+- 响应式布局
+- 自定义头像系统
+- 交互式图表
+- 现代化仪表盘设计
+- 加载状态和动画
 
-## Getting Started
+## 开发指南
 
-1. Install dependencies:
+1. 安装依赖：
 ```bash
 npm install
 ```
 
-2. Run the development server:
+2. 启动开发服务器：
 ```bash
 npm run dev
 ```
 
-3. Open [http://localhost:3000](http://localhost:3000) in your browser.
+3. 在浏览器中打开 [http://localhost:3000](http://localhost:3000)
 
-## Development Guidelines
+## 开发规范
 
-- Follow TypeScript best practices
-- Use Tailwind CSS for styling
-- Maintain component modularity
-- Follow Next.js 13+ conventions
-- Keep responsive design in mind
+- 遵循 TypeScript 最佳实践
+- 使用 Tailwind CSS 进行样式开发
+- 保持组件模块化
+- 遵循 Next.js 13+ 开发规范
+- 注重响应式设计
